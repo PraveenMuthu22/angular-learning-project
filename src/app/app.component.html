@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav opened mode="side">
+    <ul>
+      <li> <a [routerLink]="['/home']"> Home </a></li>
+      <li> <a [routerLink]="['/material']"> Material Design </a></li>
+    </ul>
+  </mat-sidenav>
+  <router-outlet></router-outlet>
+</mat-sidenav-container>
+
+
+<!-- <router-outlet></router-outlet> -->

@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { MaterialDesignRoutingModule } from './material-design-routing.module';
 import { MaterialDesignHomeComponent } from './components/material-design-home/material-design-home.component';
+import { DialogHomeComponent } from './components/dialog/dialog-home/dialog-home.component';
+import { MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
-  declarations: [MaterialDesignHomeComponent],
+  declarations: [MaterialDesignHomeComponent, DialogHomeComponent],
   imports: [
     CommonModule,
-    MaterialDesignRoutingModule
+    MaterialDesignRoutingModule,
+    MatDialogModule
   ]
 })
 export class MaterialDesignModule { }
