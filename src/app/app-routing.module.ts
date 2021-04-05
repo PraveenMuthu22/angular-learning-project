@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'material',
     loadChildren: () => import('./material-design/material-design-routing.module').then(module => module.MaterialDesignRoutingModule)
+  },
+  {
+    path: 'flexlayout',
+    loadChildren: () => import('./flexlayout/flexlayout-routing.module').then(module => module.FlexlayoutRoutingModule)
   }
 ];
 

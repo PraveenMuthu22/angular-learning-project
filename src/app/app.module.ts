@@ -4,9 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialDesignModule} from './material-design/material-design.module';
+import { FlexlayoutModule } from './flexlayout/flexlayout.module'
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     AppRoutingModule,
     MaterialDesignModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    FlexlayoutModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
