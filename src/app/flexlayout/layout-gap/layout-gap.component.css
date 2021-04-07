@@ -3,3 +3,7 @@
   height: 100px;
   border: solid black 1px;
 }
+
+.parent {
+  margin-bottom: 20px;
+}

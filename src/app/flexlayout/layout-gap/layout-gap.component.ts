@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout-gap.component.css']
 })
 export class LayoutGapComponent implements OnInit {
+  gap: number;
 
   constructor() { }
 

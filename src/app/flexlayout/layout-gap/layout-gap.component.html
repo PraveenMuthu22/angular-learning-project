@@ -1,9 +1,13 @@
-<h1 > Flexlayout gap </h1>
+<h1> Flexlayout gap </h1>
 
-<div class="parent" fxLayout="row" fxLayoutGap="5px">
+<div class="parent" fxLayout="row" [fxLayoutGap]="gap + 'px'">
   <div class="child"> </div>
   <div class="child"> </div>
   <div class="child"> </div>
   <div class="child"> </div>
 </div>
+
+<label> Gap </label>
+
+<input type="text" class="form-control" name="name" [(ngModel)]="gap">
 

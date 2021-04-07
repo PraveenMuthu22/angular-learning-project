@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FlexlayoutRoutingModule } from './flexlayout-routing.module';
 import { LayoutGapComponent } from './layout-gap/layout-gap.component';
 import { FlexHomeComponent } from './flex-home/flex-home.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     FlexlayoutRoutingModule,
-    FlexLayoutModule
-  ]
+    SharedModule
+  ],
 })
 export class FlexlayoutModule { }
