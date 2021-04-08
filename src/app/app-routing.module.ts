@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'flexlayout',
     loadChildren: () => import('./flexlayout/flexlayout-routing.module').then(module => module.FlexlayoutRoutingModule)
+  },
+  {
+    path: 'reactiveforms',
+    loadChildren: () => import('./reactive-forms/reactive-forms-routing.module').then(module => module.ReactiveFormsRoutingModule)
   }
 ];
 
