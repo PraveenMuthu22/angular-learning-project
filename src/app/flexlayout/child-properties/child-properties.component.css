@@ -1,0 +1,19 @@
+.child {
+  width: 100px;
+  height: 100px;
+  border: solid black 1px;
+}
+
+.first {
+  background-color: blanchedalmond;
+}
+
+.parent {
+  background-color: aqua;
+  width: 1000px;
+  margin-bottom: 20px;
+}
+
+.shrink {
+  width: 400px
+}

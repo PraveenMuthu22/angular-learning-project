@@ -1,0 +1,30 @@
+<h1> Flex Grow </h1>
+
+<div class="parent" fxLayout="row" fxLayoutGap='10px'>
+  <div class="child first" [fxFlex]="flexGrow + ' ' + flexShrink + ' ' + flexBasis "> </div>
+  <div class="child"> </div>
+  <div class="child"> </div>
+  <div class="child"> </div>
+</div>
+
+<h1> Flex Shrink </h1>
+
+<div class="parent shrink" fxLayout="row" fxLayoutGap='10px'>
+  <div class="child first" [fxFlex]="flexGrow + ' ' + flexShrink + ' ' + flexBasis " > </div>
+  <div class="child"> </div>
+  <div class="child"> </div>
+  <div class="child"> </div>
+
+</div>
+
+<label> Flex Grow </label>
+<input type="number" [(ngModel)]="flexGrow"> 
+
+<label> Flex Shrink </label>
+<input type="number" [(ngModel)]="flexShrink"> 
+
+<label> Flex Basis </label>
+<input type="string" [(ngModel)]="flexBasis"> 
+
+
+

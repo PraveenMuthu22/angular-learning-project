@@ -6,10 +6,11 @@ import { FlexHomeComponent } from './flex-home/flex-home.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { LayoutAlignComponent } from './layout-align/layout-align.component';
+import { ChildPropertiesComponent } from './child-properties/child-properties.component';
 
 
 @NgModule({
-  declarations: [LayoutGapComponent, FlexHomeComponent, LayoutAlignComponent],
+  declarations: [LayoutGapComponent, FlexHomeComponent, LayoutAlignComponent, ChildPropertiesComponent],
   imports: [
     CommonModule,
     FlexlayoutRoutingModule,
