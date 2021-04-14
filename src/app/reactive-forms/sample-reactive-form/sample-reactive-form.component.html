@@ -1,1 +1,49 @@
-<p>sample-reactive-form works!</p>
+<h1> Sample Reactive Form </h1>
+
+<form [formGroup]="personForm" (ngSubmit)="onSubmit()" fxLayout="column"> 
+  <div formGroupName="name">
+    <div fxLayout="row">
+      <label> First Name </label>
+      <input type="text" formControlName="firstName" />
+    </div>
+  
+    <div fxLayout="row">
+      <label> Last Name </label>
+      <input type="text" formControlName="lastName" />
+    </div>
+  </div>
+
+
+  <div fxLayout="row">
+    <label> Date of Birth </label>
+    <input type="date" formControlName="dob" />
+  </div>
+<div formGroupName="address">
+  <h2> Address </h2>
+  <div fxLayout="row">
+    <label> Street</label>
+    <input type="text" formControlName="street" />
+  </div>
+
+  <div fxLayout="row">
+    <label> City </label>
+    <input type="text" formControlName="city" />
+  </div>
+
+  <div fxLayout="row">
+    <label> State </label>
+    <input type="text" formControlName="state" />
+  </div>
+
+  <div fxLayout="row">
+    <label> Zip </label>
+    <input type="text" formControlName="zip" />
+  </div>
+</div>
+
+
+  <button type="submit"> Submit </button>
+
+  <button (click)="clear()"> Clear </button>
+  <button (click)="autoFillAddress()"> Auto Fill Address </button>
+</form>
